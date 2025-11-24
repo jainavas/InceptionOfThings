@@ -16,6 +16,8 @@ spec:
     spec:
       containers:
       - name: app-three
-        image: nginx:latest
+        image: python:3.11-slim
         ports:
-        - containerPort: 80
+        - containerPort: 8000
+        command: ["python", "-m", "http.server", "8000"]
+        workingDir: /

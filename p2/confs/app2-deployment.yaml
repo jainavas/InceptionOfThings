@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: app-two
-        image: nginx:latest
+        image: httpd:latest
         ports:
         - containerPort: 80
