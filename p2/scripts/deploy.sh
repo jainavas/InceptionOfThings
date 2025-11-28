@@ -7,12 +7,9 @@ sleep 30
 echo "Desplegando aplicaciones..."
 
 # Aplicar todos los manifiestos
-kubectl apply -f /vagrant/confs/app1-deployment.yaml
-kubectl apply -f /vagrant/confs/app1-service.yaml
-kubectl apply -f /vagrant/confs/app2-deployment.yaml
-kubectl apply -f /vagrant/confs/app2-service.yaml
-kubectl apply -f /vagrant/confs/app3-deployment.yaml
-kubectl apply -f /vagrant/confs/app3-service.yaml
+kubectl apply -f /vagrant/confs/app1.yaml
+kubectl apply -f /vagrant/confs/app2.yaml
+kubectl apply -f /vagrant/confs/app3.yaml
 kubectl apply -f /vagrant/confs/ingress.yaml
 
 echo "Esperando a que los pods arranquen..."
